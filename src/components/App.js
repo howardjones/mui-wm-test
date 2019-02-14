@@ -3,8 +3,9 @@ import { Paper, Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 
 import TopTabs from "./TopTabs";
-import MapView from "./MapView";
-import ManageView from "./ManageView";
+import MapView from "./viewer/MapView";
+import ManageView from "./manager/ManageView";
+import EditView from "./editor/EditView";
 import WelcomeView from "./WelcomeView";
 
 const styles = {
@@ -16,7 +17,7 @@ const styles = {
 
 class App extends Component {
   state = {
-    view: "manage"
+    view: "editor"
   };
 
   handleTabSelect = newView => {
@@ -35,6 +36,7 @@ class App extends Component {
         {this.state.view === "welcome" ? <WelcomeView /> : null}
         {this.state.view === "maps" ? <MapView /> : null}
         {this.state.view === "manage" ? <ManageView /> : null}
+        {this.state.view === "editor" ? <EditView /> : null}
       </Fragment>
     );
   }
