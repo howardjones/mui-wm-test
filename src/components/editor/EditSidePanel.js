@@ -1,16 +1,6 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from 'react'
 
-import {
-  AppBar,
-  Paper,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemLink,
-  Typography,
-  Tabs,
-  Tab
-} from "@material-ui/core";
+import { List, ListItem, ListItemText, Typography } from '@material-ui/core'
 
 export default () => (
   <Fragment>
@@ -38,5 +28,6 @@ export default () => (
         <ListItemText primary="l1" />
       </ListItem>
     </List>
+    <p>Side bar has a list of all objects, even invisible ones.</p>
   </Fragment>
 );

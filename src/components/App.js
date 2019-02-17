@@ -1,19 +1,10 @@
-import React, { Component, Fragment } from "react";
-import { Paper, Typography } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
+import React, { Component, Fragment } from 'react'
 
-import TopTabs from "./TopTabs";
-import MapView from "./viewer/MapView";
-import ManageView from "./manager/ManageView";
-import EditView from "./editor/EditView";
-import WelcomeView from "./WelcomeView";
-
-const styles = {
-  root: {
-    width: "100%",
-    maxWidth: 500
-  }
-};
+import TopTabs from './TopTabs'
+import MapView from './viewer/MapView'
+import ManageView from './manager/ManageView'
+import EditView from './editor/EditView'
+import WelcomeView from './WelcomeView'
 
 class App extends Component {
   state = {

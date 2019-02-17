@@ -1,6 +1,6 @@
-import React from "react";
-import { AppBar, Paper, Typography, Tabs, Tab } from "@material-ui/core";
-import TabContainer from "./TabContainer";
+import React from 'react'
+import { Typography } from '@material-ui/core'
+import TabContainer from './TabContainer'
 
 export default () => (
   <TabContainer>

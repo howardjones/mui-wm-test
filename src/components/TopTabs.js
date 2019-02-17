@@ -1,5 +1,5 @@
-import React from "react";
-import { AppBar, Paper, Typography, Tabs, Tab } from "@material-ui/core";
+import React from 'react'
+import { AppBar, Tab, Tabs } from '@material-ui/core'
 
 export default ({ currentview = "maps", onSelect }) => {
   const tabs = ["maps", "manage"];

@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from "react";
+import React from 'react'
 
-import { AppBar, Paper, Typography, Tabs, Tab } from "@material-ui/core";
+import { Paper } from '@material-ui/core'
 
 export default () => (
-  <Paper>
-    <p>View of the map itself</p>
+  <Paper width="100%" height="100%">
+    <div id="wm_editor_map" style={{width: '100%', overflow: 'auto'}}><img src="example-map.png"
+                                                                           alt={'The map being edited'}/></div>
   </Paper>
 );

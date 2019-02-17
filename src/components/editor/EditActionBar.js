@@ -1,20 +1,12 @@
-import React, { Component, Fragment } from "react";
+import React from 'react'
 
-import {
-  AppBar,
-  Button,
-  Paper,
-  Typography,
-  Tabs,
-  Tab
-} from "@material-ui/core";
-import Toolbar from "@material-ui/core/Toolbar";
+import { AppBar, Button, Typography } from '@material-ui/core'
+import Toolbar from '@material-ui/core/Toolbar'
 
 export default () => (
-  <div>
-    <AppBar position="static">
+  <AppBar position="static" width={'100%'}>
       <Toolbar>
-        <Typography variant="body1" color="inherit">
+        <Typography variant="body1" color="inherit" style={{marginRight: 10}}>
           Node: n3455
         </Typography>
         <Button
@@ -43,5 +35,4 @@ export default () => (
         </Button>
       </Toolbar>
     </AppBar>
-  </div>
 );
